@@ -1,0 +1,44 @@
+cd /Herwig/EventHandlers
+create ThePEG::Cuts   /Herwig/Cuts/NoCuts
+
+mkdir LesHouches
+cd LesHouches
+library LesHouches.so
+cd /Herwig/EventHandlers
+create ThePEG::LesHouchesFileReader theLHReader  LesHouches.so
+set theLHReader:WeightWarnings false 
+
+cd /Herwig/EventHandlers
+create ThePEG::LesHouchesEventHandler LesHouchesHandler
+insert LesHouchesHandler:LesHouchesReaders[0] theLHReader
+set LesHouchesHandler:PartonExtractor /Herwig/Partons/EEExtractor
+set LesHouchesHandler:StatLevel 2
+set LesHouchesHandler:Cuts /Herwig/Cuts/NoCuts
+set LesHouchesHandler:WeightOption VarNegWeight
+set LesHouchesHandler:CascadeHandler /Herwig/Shower/ShowerHandler
+set LesHouchesHandler:HadronizationHandler /Herwig/Hadronization/ClusterHadHandler
+set LesHouchesHandler:DecayHandler /Herwig/Decays/DecayHandler
+
+set theLHReader:FileName input.lhe
+
+cd /Herwig/Generators
+create ThePEG::EventGenerator theGenerator
+set theGenerator:RandomNumberGenerator /Herwig/Random
+set theGenerator:StandardModelParameters /Herwig/Model
+set theGenerator:EventHandler /Herwig/EventHandlers/LesHouchesHandler
+
+set theGenerator:NumberOfEvents 10000
+set theGenerator:RandomNumberGenerator:Seed 31122001
+set theGenerator:DebugLevel 0
+set theGenerator:PrintEvent 100
+set theGenerator:MaxErrors 10000
+
+insert theGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
+set /Herwig/Analysis/HepMCFile:PrintEvent 10000
+set /Herwig/Analysis/HepMCFile:Format GenEvent
+set /Herwig/Analysis/HepMCFile:Units GeV_mm
+set /Herwig/Analysis/HepMCFile:Filename zplusjets_output.hepmc
+
+cd /Herwig/Generators
+#run Zj-gen theGenerator
+run zplusjets theGenerator

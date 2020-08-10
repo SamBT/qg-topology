@@ -1,0 +1,8 @@
+1       g u > ve ve~ u,g c > ve ve~ c,g u > vm vm~ u,g c > vm vm~ c,g u > vt vt~ u,g c > vt vt~ c
+mirror  u g > ve ve~ u,c g > ve ve~ c,u g > vm vm~ u,c g > vm vm~ c,u g > vt vt~ u,c g > vt vt~ c
+2       g d > ve ve~ d,g s > ve ve~ s,g d > vm vm~ d,g s > vm vm~ s,g d > vt vt~ d,g s > vt vt~ s
+mirror  d g > ve ve~ d,s g > ve ve~ s,d g > vm vm~ d,s g > vm vm~ s,d g > vt vt~ d,s g > vt vt~ s
+3       g u~ > ve ve~ u~,g c~ > ve ve~ c~,g u~ > vm vm~ u~,g c~ > vm vm~ c~,g u~ > vt vt~ u~,g c~ > vt vt~ c~
+mirror  u~ g > ve ve~ u~,c~ g > ve ve~ c~,u~ g > vm vm~ u~,c~ g > vm vm~ c~,u~ g > vt vt~ u~,c~ g > vt vt~ c~
+4       g d~ > ve ve~ d~,g s~ > ve ve~ s~,g d~ > vm vm~ d~,g s~ > vm vm~ s~,g d~ > vt vt~ d~,g s~ > vt vt~ s~
+mirror  d~ g > ve ve~ d~,s~ g > ve ve~ s~,d~ g > vm vm~ d~,s~ g > vm vm~ s~,d~ g > vt vt~ d~,s~ g > vt vt~ s~

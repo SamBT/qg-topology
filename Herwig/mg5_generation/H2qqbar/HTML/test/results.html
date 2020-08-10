@@ -1,0 +1,162 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 10.847 &#177 0.0218 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx</td>
+    <td align=right><a id="#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx" href=#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx onClick="check_link('#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx')"> 9.026 </a> </td>
+    <td align=right>  0.0199</td>
+    <td align=right>  147.071</td>
+    <td align=right>  11027.0</td>
+    <td align=right>  0</td>
+</tr>
+
+<tr><td align=right>/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx</td>
+    <td align=right><a id="#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx" href=#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx onClick="check_link('#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx')"> 0.006691 </a> </td>
+    <td align=right>  9.99e-05</td>
+    <td align=right>  7.034</td>
+    <td align=right>  494.0</td>
+    <td align=right>  0</td>
+</tr>
+
+<tr><td align=right>/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx</td>
+    <td align=right><a id="#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx" href=#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx onClick="check_link('#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx','#/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx')"> 1.815 </a> </td>
+    <td align=right>  0.00888</td>
+    <td align=right>  45.124</td>
+    <td align=right>  2619.0</td>
+    <td align=right>  0</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 9.0256 &#177 0.0199 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G1/run1_app.log" href=/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G1/run1_app.log onClick="check_link('/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G1/run1_app.log','../../SubProcesses/P1_gg_hg_h_bbx/G1/log.txt','/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G1/run1_app.log')"> 0.03442 </a> </td>
+    <td align=right>  0.000473</td>
+    <td align=right>  7.016</td>
+    <td align=right>  445.0</td>
+    <td align=right>  1.29e+04</td>
+</tr>
+
+<tr><td align=right>G2</td>
+    <td align=right><a id="/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G2/run1_app.log" href=/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G2/run1_app.log onClick="check_link('/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G2/run1_app.log','../../SubProcesses/P1_gg_hg_h_bbx/G2/log.txt','/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G2/run1_app.log')"> 4.483 </a> </td>
+    <td align=right>  0.0146</td>
+    <td align=right>  69.765</td>
+    <td align=right>  5297.0</td>
+    <td align=right>  1.18e+03</td>
+</tr>
+
+<tr><td align=right>G3</td>
+    <td align=right><a id="/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G3/run1_app.log" href=/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G3/run1_app.log onClick="check_link('/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G3/run1_app.log','../../SubProcesses/P1_gg_hg_h_bbx/G3/log.txt','/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_gg_hg_h_bbx/../../SubProcesses/P1_gg_hg_h_bbx/G3/run1_app.log')"> 4.508 </a> </td>
+    <td align=right>  0.0135</td>
+    <td align=right>  70.29</td>
+    <td align=right>  5285.0</td>
+    <td align=right>  1.17e+03</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 0.0066908 &#177 9.99e-05 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx/../../SubProcesses/P1_qq_hg_h_bbx/G1/run1_app.log" href=/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx/../../SubProcesses/P1_qq_hg_h_bbx/G1/run1_app.log onClick="check_link('/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx/../../SubProcesses/P1_qq_hg_h_bbx/G1/run1_app.log','../../SubProcesses/P1_qq_hg_h_bbx/G1/log.txt','/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P1_qq_hg_h_bbx/../../SubProcesses/P1_qq_hg_h_bbx/G1/run1_app.log')"> 0.006691 </a> </td>
+    <td align=right>  9.99e-05</td>
+    <td align=right>  7.034</td>
+    <td align=right>  494.0</td>
+    <td align=right>  7.38e+04</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 1.8151 &#177 0.00888 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx/../../SubProcesses/P2_gq_hq_h_bbx/G1/run1_app.log" href=/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx/../../SubProcesses/P2_gq_hq_h_bbx/G1/run1_app.log onClick="check_link('/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx/../../SubProcesses/P2_gq_hq_h_bbx/G1/run1_app.log','../../SubProcesses/P2_gq_hq_h_bbx/G1/log.txt','/global/u1/s/sambt/Jets/qg_tagging_topology_project/Herwig/mg5_generation/H2qqbar/SubProcesses/P2_gq_hq_h_bbx/../../SubProcesses/P2_gq_hq_h_bbx/G1/run1_app.log')"> 1.815 </a> </td>
+    <td align=right>  0.00888</td>
+    <td align=right>  45.124</td>
+    <td align=right>  2619.0</td>
+    <td align=right>  1.44e+03</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>

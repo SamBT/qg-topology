@@ -1,0 +1,3 @@
+large: no threshold
+small: size 1 in eta
+medium: cut off the first and last in eta
